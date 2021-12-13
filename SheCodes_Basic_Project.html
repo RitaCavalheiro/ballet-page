@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ballet</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+
+      h1 {
+        text-align: center;
+        color: #ebccbf;
+        margin: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #decfc1;
+        font-size: 18px;
+        font-style: italic;
+        padding: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 20px 0 10px;
+      }
+
+      .classes {
+        color: #decfc1;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+      }
+
+      .classes:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 25px auto;
+        background: #ebccbf;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+      }
+
+      .creator {
+        color: #decfc1;
+        text-decoration: none;
+      }
+      .creator:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        background: #f3f5f7;
+        max-width: 400px;
+        margin: 30px auto;
+        padding: 15px 60px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ballet</h1>
+
+      <h2>Dancing is creating a sculpture that is visible only for a moment</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/981/original/dance-photography-vadim-stein-95-580496b33c438__880.jpeg?1631362434"
+        alt="Black and white photo of ballerina in point shoes"
+      />
+
+      <p>
+        You have to love dancing to stick to it. It gives you nothing back, no
+        manuscripts to store away, no paintings to show on walls and maybe hang
+        in museums, no poems to be printed and sold, nothing but that single
+        fleeting moment when you feel alive.
+      </p>
+
+      <a
+        href="https://www.studiobballetacademy.com/classes"
+        target="_blank"
+        class="classes"
+        >Learn more about our classes</a
+      >
+
+      <button>Book a class</button>
+
+      <p class="footer">
+        This page was build by
+        <a
+          href="https://www.linkedin.com/in/rita-cavalheiro-830120104/"
+          target="_blank"
+          class="creator"
+        >
+          Rita Cavalheiro</a
+        >
+      </p>
+    </div>
+    <script>
+      function book() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email adress?");
+        let level = prompt("What is your ballet level?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! 🩰 We'll be in touch via e-mail with the schedueles of classes for level " +
+            level
+        );
+      }
+
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", book);
+    </script>
+  </body>
+</html>
